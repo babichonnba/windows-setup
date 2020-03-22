@@ -57,7 +57,8 @@ $fonts = @{
     "opensans"
     "robotofonts"
     "sourcecodepro"
-"    ubuntu.font"}
+    "ubuntu.font"
+}
 
 foreach ($font in $fonts) {
     choco install --limit-output
@@ -70,6 +71,7 @@ $apps = @{
     "everything"
     "firefox"
     "grammarly"
+    "imageglass"
     "itunes"
     "logitech-options"
     "notepadplusplus"
@@ -81,7 +83,6 @@ $apps = @{
     "ueli"
     "vlc"
     "vscode"
-    "imageglass"
 }
 
 foreach ($app in $apps) {
