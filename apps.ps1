@@ -35,38 +35,57 @@ if ((which cinst) -eq $null) {
 }
  
 # system and cli
-choco install curl                 --limit-output
-choco install git.install          --limit-output -params '"/GitAndUnixToolsOnPath /NoShellIntegration"'
-choco install nuget.commandline    --limit-output
-choco install nvm.portable         --limit-output
-choco install python               --limit-output
-choco install ruby                 --limit-output
-choco install vim                  --limit-output
-choco install webpi                --limit-output
+clis = @{
+    "curl"
+    "git"
+    "nuget.commandline"
+    "nvm.portable"
+    "python"
+    "ruby"
+    "vim"
+    "webpi"
+}
+
+foreach ($cli in $clis) {
+    choco install $cli --limit-output
+}
  
 #fonts
-choco install lato                 --limit-output
-choco install merriweather         --limit-output
-choco install opensans             --limit-output
-choco install robotofonts          --limit-output
-choco install sourcecodepro        --limit-output
-choco install ubuntu.font          --limit-output
+$fonts = @{
+    "lato"
+    "merriweather"
+    "opensans"
+    "robotofonts"
+    "sourcecodepro"
+"    ubuntu.font"}
+
+foreach ($font in $fonts) {
+    choco install --limit-output
+}
  
 #apps 
-choco install brackets             --limit-output
-choco install chocolateygui        --limit-output
-choco install everything           --limit-output
-choco install firefox              --limit-output
-choco install grammarly            --limit-output
-choco install itunes               --limit-output
-choco install logitech-options     --limit-output
-choco install notepadplusplus      --limit-output
-choco install peazip               --limit-output
-choco install quicklook            --limit-output
-choco install sharex               --limit-output
-choco install sumatrapdf           --limit-output
-choco install ueli                 --limit-output
-choco install vlc                  --limit-output
-choco install vscode               --limit-output
+$apps = @{
+    "brackets"
+    "chocolateygui"
+    "everything"
+    "firefox"
+    "grammarly"
+    "itunes"
+    "logitech-options"
+    "notepadplusplus"
+    "peazip"
+    "powertoys"
+    "quicklook"
+    "sharex"
+    "sumatrapdf"
+    "ueli"
+    "vlc"
+    "vscode"
+    "imageglass"
+}
+
+foreach ($app in $apps) {
+    choco install $app --limit-output
+}
  
 Refresh-Environment
