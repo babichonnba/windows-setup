@@ -17,6 +17,7 @@ $extensions = @(
     "ms-azuretools.vscode-docker"
     "ms-mssql.mssql"
     "ms-python.python"
+    "ms-vscode-remote.remote-wsl"
     "ms-vscode.powershell"
     "PKief.material-icon-theme"
     "ritwickdey.LiveServer"
