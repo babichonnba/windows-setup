@@ -61,13 +61,14 @@ $fonts = @{
 }
 
 foreach ($font in $fonts) {
-    choco install --limit-output
+    choco install $font --limit-output
 }
  
 #apps 
 $apps = @{
     "brackets"
     "chocolateygui"
+    "eartrumpet"
     "everything"
     "firefox"
     "grammarly"
@@ -88,5 +89,9 @@ $apps = @{
 foreach ($app in $apps) {
     choco install $app --limit-output
 }
+
+# Download Windows Package Manager winget 
+Write-Host = 'Opening Windows Package Manager Releases Download Page... '
+start "https://github.com/microsoft/winget-cli/releases"
  
 Refresh-Environment
