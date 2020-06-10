@@ -14,6 +14,7 @@ $extensions = @(
     "HookyQR.beautify"
     "jmrog.vscode-nuget-package-manager"
     "mechatroner.rainbow-csv"
+    "ms-azuretools.vscode-docker"
     "ms-mssql.mssql"
     "ms-python.python"
     "ms-vscode.powershell"
@@ -23,6 +24,7 @@ $extensions = @(
     "Tyriar.sort-lines"
     "vscodevim.vim"
     "yzhang.markdown-all-in-one"
+    
 )
 
 foreach ($extension in $extensions) {
