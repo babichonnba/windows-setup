@@ -84,6 +84,8 @@ $apps = @{
     "ueli"
     "vlc"
     "vscode"
+    "whatsapp"
+    "telegram"
 }
 
 foreach ($app in $apps) {
