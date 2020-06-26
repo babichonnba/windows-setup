@@ -42,7 +42,6 @@ clis = @{
     "nvm.portable"
     "python"
     "ruby"
-    "vim"
     "webpi"
 }
 
@@ -68,24 +67,34 @@ foreach ($font in $fonts) {
 $apps = @{
     "brackets"
     "chocolateygui"
+    "docker"
+    "docker-cli"
+    "docker-compose"
     "eartrumpet"
     "everything"
+    "fileoptimizer"
     "firefox"
     "grammarly"
     "imageglass"
     "itunes"
+    "krita"
     "logitech-options"
     "notepadplusplus"
     "peazip"
+    "postman"
     "powertoys"
+    "powertoys"
+    "qbittorrent"
     "quicklook"
     "sharex"
     "sumatrapdf"
+    "telegram"
+    "telegram"
     "ueli"
     "vlc"
     "vscode"
     "whatsapp"
-    "telegram"
+    "youtube-dl"
 }
 
 foreach ($app in $apps) {
