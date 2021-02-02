@@ -84,6 +84,8 @@ $apps = @{
     "postman"
     "powertoys"
     "powertoys"
+    "protonmailbridge"
+    "protonvpn"
     "qbittorrent"
     "quicklook"
     "sharex"
