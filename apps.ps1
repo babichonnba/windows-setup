@@ -95,6 +95,7 @@ $apps = @{
     "teamviewer"
     "telegram"
     "telegram"
+    "teracopy"
     "ueli"
     "vlc"
     "vnc-viewer"
