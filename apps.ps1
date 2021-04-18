@@ -70,6 +70,7 @@ $apps = @{
     "docker"
     "docker-cli"
     "docker-compose"
+    "etcher"
     "eartrumpet"
     "everything"
     "fileoptimizer"
