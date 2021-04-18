@@ -81,6 +81,7 @@ $apps = @{
     "itunes"
     "krita"
     "logitech-options"
+    "microsoft-windows-terminal"
     "notepadplusplus"
     "notion"
     "office365proplus"
