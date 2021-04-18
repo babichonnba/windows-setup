@@ -81,6 +81,7 @@ $apps = @{
     "krita"
     "logitech-options"
     "notepadplusplus"
+    "notion"
     "office365proplus"
     "peazip"
     "postman"
