@@ -65,6 +65,7 @@ foreach ($font in $fonts) {
  
 #apps 
 $apps = @{
+    "authy-desktop"
     "etcher"
     "brackets"
     "chocolateygui"
