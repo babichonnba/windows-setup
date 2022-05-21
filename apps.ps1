@@ -62,50 +62,12 @@ $fonts = @{
 foreach ($font in $fonts) {
     choco install $font --limit-output
 }
- 
+
+
 #apps 
 $apps = @{
-    "authy-desktop"
-    "etcher"
-    "brackets"
-    "chocolateygui"
-    "docker"
     "docker-cli"
     "docker-compose"
-    "etcher"
-    "eartrumpet"
-    "everything"
-    "fileoptimizer"
-    "firefox"
-    "google-backup-and-sync"
-    "grammarly"
-    "imageglass"
-    "itunes"
-    "krita"
-    "logitech-options"
-    "microsoft-windows-terminal"
-    "notepadplusplus"
-    "notion"
-    "office365proplus"
-    "peazip"
-    "postman"
-    "powertoys"
-    "protonmailbridge"
-    "protonvpn"
-    "pycharm"
-    "qbittorrent"
-    "quicklook"
-    "sharex"
-    "sumatrapdf"
-    "teamviewer"
-    "telegram"
-    "telegram"
-    "teracopy"
-    "ueli"
-    "vlc"
-    "vnc-viewer"
-    "vscode"
-    "whatsapp"
     "youtube-dl"
 }
 
@@ -116,5 +78,49 @@ foreach ($app in $apps) {
 # Download Windows Package Manager winget 
 Write-Host = 'Opening Windows Package Manager Releases Download Page... '
 start "https://github.com/microsoft/winget-cli/releases"
- 
+
 Refresh-Environment
+
+# WinGet Apps 
+$win_apps = @{
+    "Apple.Itunes"
+    "Docker.DockerDesktop"
+    "EarTrumpet"
+    "FileOptimizer"
+    "Giorgiotani.Peazip"
+    "Google.BackupAndSync"
+    "Grammarly.ForOffice"
+    "Grammarly.ForWindows"
+    "KDE.krita"
+    "Logitech.options"
+    "Microsoft.PowerToys"
+    "Microsoft.VisualStudioCode"
+    "Microsoft.WindowsTerminal"
+    "Mozilla.Firefox"
+    "Notepadplusplus"
+    "Notion.Notion"
+    "ProtonTechnologies.ProtonMailBridge"
+    "ProtonTechnologies.ProtonVPN"
+    "Q-Win.QuickLook"
+    "RealVNC.VNCViewer"
+    "ShareX"
+    "SumatraPDF"
+    "TeamViewer.TeamViewer"
+    "Telegram.TelegramDesktop"
+    "VideoLAN.VLC"
+    "Whatsapp.Whatsapp"
+    "authy-desktop"
+    "balenaetcher"
+    "brackets-cont.brackets"
+    "choco"
+    "imageglass"
+    "postman.postman"
+    "qbittorrent.qbittorrent"
+    "ueli"
+    "voidtools.everything"
+
+}
+
+foreach ($win_apps in $win_app) {
+    winget install $win_app
+}
